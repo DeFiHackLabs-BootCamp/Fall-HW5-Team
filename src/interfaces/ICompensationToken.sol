@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-interface ICredToken {
+interface ICompensationToken {
     function decimals() external returns (uint8);
 
     function approve(address to, uint256 amount) external;

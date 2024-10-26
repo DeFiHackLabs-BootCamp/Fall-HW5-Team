@@ -1,80 +1,62 @@
-# First Flight #10: One Shot
+# Chiikawa
 
-# Contest Details
-
-### Prize Pool
-
-- High - 100xp
-- Medium - 20xp
-- Low - 2xp
-
-- Starts: February 22, 2024 Noon UTC
-- Ends: February 29, 2024 Noon UTC
+#  Details
 
 ### Stats
 
 - nSLOC: 201
-- Complexity Score: 143
 
-[//]: # (contest-details-open)
-
-## Disclaimer
-
-_This code was created for Codehawks as the first flight. It is made with bugs and flaws on purpose._
-_Don't use any part of this code without reviewing it and audit it._
-
-_Created by equious.eth_
 
 # About
 
-When opportunity knocks, you gunna answer it? One Shot lets a user mint a rapper NFT, have it gain experience in the streets (staking) and Rap Battle against other NFTs for Cred.
+Prepare to accept the mission!
+Users mint a Chiikawa NFT,
+train and gain experience (staking),
+and conquest against other NFTs to earn rewards.
 
-## OneShot.sol
+## RequestQuest .sol
 
-The Rapper NFT.
+The Chiikawa NFT.
 
-Users mint a rapper that begins with all the flaws and self-doubt we all experience.
+Users mint a chiikawa that begins with all the flaws and cowardly we all experience.
 NFT Mints with the following properties:
 
-- `weakKnees` - True
-- `heavyArms` - True
-- `spaghettiSweater` - True
+- `smallFeet` - True
+- `weapon` - True
+- `miniBag` - True
 - `calmandReady` - False
 - `battlesWon` - 0
 
-The only way to improve these stats is by staking in the `Streets.sol`:
+The only way to improve these stats is by staking in the `Training.sol`:
 
-## Streets.sol
+## Training.sol
 
-Experience on the streets will earn you Cred and remove your rapper's doubts.
+Experience on training will earn you Compensation and remove your chiikawa's fear.
 
-- Staked Rapper NFTs will earn 1 Cred ERC20/day staked up to 4 maximum
-- Each day staked a Rapper will have properties change that will help them in their next Rap Battle
+- Staked Chiikawa NFTs will earn 1 Compensation ERC20/day staked up to 4 maximum
+- Each day staked a Chiikawa will have properties change that will help them in their next Conquests.
 
-## RapBattle.sol
+## Conquests.sol
 
-Users can put their Cred on the line to step on stage and battle their Rappers. A base skill of 50 is applied to all rappers in battle, and this is modified by the properties the rapper holds.
+Users can put their Compensation on weeding and battle their Chiikawa. A base skill of 50 is applied to all chiikawa in battle, and this is modified by the properties the rapper holds.
 
-- WeakKnees - False = +5
-- HeavyArms - False = +5
-- SpaghettiSweater - False = +5
+- SmallFeet - False = +5
+- Weapon - False = +5
+- MiniBag - False = +5
 - CalmAndReady - True = +10
 
-Each rapper's skill is then used to weight their likelihood of randomly winning the battle!
+Each chiikawa's skill is then used to weight their likelihood of randomly winning the battle!
 
 - Winner is given the total of both bets
 
-## CredToken.sol
+## CompensationToken.sol
 
-ERC20 token that represents a Rapper's credibility and time on the streets. The primary currency at risk in a rap battle.
+ERC20 token that represents a Chiikawa's credibility and time on the training. The primary currency at risk in a conquest.
 
 ## Roles
 
-User - Should be able to mint a rapper, stake and unstake their rapper and go on stage/battle
+User - Should be able to mint a chiikawa, stake and unstake their chiikawa and go weeding/battle
 
-[//]: # (contest-details-close)
-
-[//]: # (getting-started-open)
 
 # Getting Started
 
@@ -105,9 +87,7 @@ and for coverage based testing:
 forge coverage --report debug
 ```
 
-[//]: # (getting-started-close)
 
-[//]: # (scope-open)
 
 # Audit Scope Details
 
@@ -115,10 +95,10 @@ forge coverage --report debug
 
 ```
 ├── src
-│   ├── CredToken.sol
-│   ├── OneShot.sol
-│   ├── RapBattle.sol
-│   ├── Streets.sol
+│   ├── CompensationToken.sol
+│   ├── RequestQuest.sol
+│   ├── Conquest.sol
+│   ├── Training.sol
 ```
 
 ## Compatibilities
@@ -128,12 +108,10 @@ forge coverage --report debug
   - Ethereum
   - Arbitrum
  
-[//]: # (scope-close)
 
-[//]: # (known-issues-open)
 
 # Known Issues
 
 None
 
-[//]: # (known-issues-close)
+
