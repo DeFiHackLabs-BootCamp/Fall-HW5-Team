@@ -38,7 +38,7 @@ Experience on training will earn you Compensation and remove your chiikawa's fea
 
 ## Conquests.sol
 
-Users can put their Compensation on weeding and battle their Chiikawa. A base skill of 50 is applied to all chiikawa in battle, and this is modified by the properties the rapper holds.
+Users can put their Compensation on weeding and battle their Chiikawa. A base skill of 50 is applied to all chiikawa in battle, and this is modified by the properties the chiikawa holds.
 
 - SmallFeet - False = +5
 - Weapon - False = +5
